@@ -20,11 +20,12 @@ body{
 
 .header-top{
     background-color: #2D25A0;
-    padding: 153px 140px 86px 156px;
+    padding-top: 100px;
+    padding-bottom: 56px;
 
 }
 
-.header-top{
+.header-t{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,8 +41,6 @@ body{
     line-height: 80px;
     width: 485px;
     height: 230px;
-    left: 156px;
-    top: 207px;
     color: #fff;
     padding-bottom: 25px;
 }
@@ -119,3 +118,140 @@ body{
     height: 427px;
 }
 
+/* Live Football Watch Css */
+.Live-video{
+    max-width: 100%;
+    margin-top: 120px;
+    margin-bottom: 100px;
+   
+}
+.live-v-heading h1{
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Our Subscribe Section */
+.sub-heading h2{
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.our-subscribe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+
+.our-subscribe input{
+    width: 400px;
+    height: 37px;
+    padding-left: 15px;
+    margin-right: 20px;
+    border-radius: 10px;
+    outline: 0;
+    border: 2px solid #ddd;
+   
+}
+.our-subscribe ::placeholder{
+    font-weight: 600;
+    color: #ddd;
+}
+
+.our-subscribe input:focus{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Section Css */
+
+.footer-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20pxpx;
+    height: 213px;
+}
+
+.f-image{}
+.f-image img{
+    width: 483.87px;
+    height: 110px;
+}
+.f-icon {}
+.f-icon i{
+    padding: 15px 10px;
+    font-size: 16px;
+    color: #777;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.f-icon i:hover{
+    color: #E02C6D;
+}
+.f-copyright{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+/* Responsive Media Quary Css */
+
+@media only screen and (max-device-width : 688px) {
+
+    .container{
+        max-width: 100%;
+    }
+
+    .header-t{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .header-content{
+        margin-bottom: 30px;
+    }
+    .header-content h2{
+        font-size: 58px;
+        height: auto;
+    }
+    .players-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .heilight-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .heilight-contant{
+        margin-bottom: 30px;
+    }
+    .Live-video iframe{
+        max-width: 100%;
+        
+    }
+    .our-subscribe{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 120px;
+    }
+    .sub-heading h2{
+        font-size: 35px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .our-subscribe input{
+        margin-bottom: 15px;
+    }
+}
