@@ -96,6 +96,8 @@ body{
 }
 .player-image img{
     max-width: 100%;
+    width: 300px;
+    height: 256px;
 }
 .player-bio h3{
     margin: 15px 0;
