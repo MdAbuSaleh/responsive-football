@@ -20,12 +20,12 @@ body{
 
 .header-top{
     background-color: #2D25A0;
-    padding-top: 100px;
-    padding-bottom: 56px;
+    padding-top: 153px;
+    padding-bottom: 86px;
 
 }
 
-.header-t{
+.header-section{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,9 +64,20 @@ body{
 .header-image img{
     width: 556.1px;
     height: 438px;
+    animation: Football 3s ease infinite alternate;
 }
 
-/* Player Information Css */
+@keyframes Football {
+
+    to{
+        transform: rotate(5deg) ;
+    }
+    
+}
+
+/*------------------------------------
+     Player Information Css
+------------------------------------- */
 
 .players-details{
     display: grid;
@@ -81,16 +92,23 @@ body{
     width: 330px;
     height: 474px;  
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    padding: 10px;
+    padding: 15px;
 }
 .player-image img{
     max-width: 100%;
 }
 .player-bio h3{
     margin: 15px 0;
+    font-weight: bold;
+    font-size: 28px;
+}
+.player-bio p{
+    font-size: 16px;
 }
 
-/* Hilight Section Css */
+/* -------------------------------------------
+    Hilight Section Css 
+----------------------------------------------*/
 .heilight-section{
     display: flex;
     justify-content: center;
@@ -118,7 +136,9 @@ body{
     height: 427px;
 }
 
-/* Live Football Watch Css */
+/* -------------------------------------
+    Live Football Watch Css 
+---------------------------------------*/
 .Live-video{
     max-width: 100%;
     margin-top: 120px;
@@ -132,7 +152,9 @@ body{
     margin-bottom: 50px;
 }
 
-/* Our Subscribe Section */
+/* -------------------------------------
+    Our Subscribe Section 
+-------------------------------------*/
 .sub-heading h2{
     font-size: 45px;
     font-weight: 700;
@@ -166,7 +188,9 @@ body{
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* Footer Section Css */
+/*-------------------------------------
+     Footer Section Css 
+ -------------------------------------*/
 
 .footer-section{
     display: flex;
@@ -200,7 +224,11 @@ body{
 }
 
 
-/* Responsive Media Quary Css */
+/*-------------------------------------
+
+    Responsive Media Quary Css 
+
+-------------------------------------*/
 
 @media only screen and (max-device-width : 688px) {
 
@@ -208,7 +236,7 @@ body{
         max-width: 100%;
     }
 
-    .header-t{
+    .header-section{
         flex-direction: column;
         align-items: center;
         
@@ -220,6 +248,7 @@ body{
         font-size: 58px;
         height: auto;
     }
+    
     .players-details{
         display: flex;
         flex-direction: column;
